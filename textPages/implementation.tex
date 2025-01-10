@@ -2,7 +2,7 @@
 \label{implementation}
 
 \section{Methodology}
-The objective of the \ac{PoC} was to integrate an \ac{LLM} extension into the existing \textit{Champions Circle} software to evaluate the fittingness of achievements 
+The objective of the \ac{PoC} was to integrate an \ac{LLM} extension into the existing \textit{Champions Circle} software to evaluate the suitability of achievements 
 before they are submitted for manager approval. The process aimed to simplify and enhance the recommendation workflow by providing managers with a score (1-10) and an 
 explanation of why the achievement is suitable for the nominated category. To achieve this, the following methodology was followed:
 
@@ -11,7 +11,7 @@ explanation of why the achievement is suitable for the nominated category. To ac
     This involved understanding how recommendations are made for various achievement categories, 
     and the roles and responsibilities of the participants in the approval process (Manager, Leader, Jury).
     
-    \item \textbf{Defining Criteria for Evaluation:} As part of the \ac{PoC}, additional criteria were defined for the \ac{LLM} to consider when evaluating the fittingness of achievements. 
+    \item \textbf{Defining Criteria for Evaluation:} As part of the \ac{PoC}, additional criteria were defined for the \ac{LLM} to consider when evaluating the suitability of achievements. 
     These criteria were derived from multiple SharePoint pages shared by SAP Labs India, detailing the inclusion and exclusion rules for each category. 
     These rules were compiled into a \texttt{.csv} file, which was used as supplementary input to the \ac{LLM}.
     
@@ -48,7 +48,7 @@ and the configuration of the \texttt{.csv} files for categories, criteria, and q
     \end{lstlisting}
     
     \item \textbf{Questions:} A second \texttt{.csv} file was provided which contained predefined questions, each associated with a specific category. 
-    These questions were designed to help clarify and define the achievement, ensuring that the \ac{LLM} could better assess the fittingness of the achievement for the corresponding category.
+    These questions were designed to help clarify and define the achievement, ensuring that the \ac{LLM} could better assess the suitability of the achievement for the corresponding category.
     
     \item \textbf{Integration of the \ac{LLM}:} The \ac{LLM} was integrated into the application through the Node.js server, 
     which allowed the web application to send achievement details along with the relevant parts of the \texttt{.csv} files to the \ac{LLM} for evaluation. 
